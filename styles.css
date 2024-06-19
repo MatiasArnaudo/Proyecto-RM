@@ -1,6 +1,4 @@
 /* VARIALBLES */
-:root {
-}
 
 * {
   margin: 0;
@@ -27,8 +25,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
-  height: 65px;
+  padding: 15px 20px;
+  height: 60px;
+  width: 100%;
+  position: fixed;
 }
 
 .navbar,
@@ -44,12 +44,128 @@ header {
 }
 
 .navbar-list a {
-    color: black;
-    font-size: 14px;
+  color: black;
+  font-size: 14px;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  flex-direction: column;
+}
+
+/* HERO */
+
+#hero {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px ;
+  gap: 120px;
 }
 
 /* BODY */
 
 body {
-  background: #b79891;
+  background-color: #b79891;
+}
+
+/* IMG HERO */
+
+.RM {
+  max-width: 500px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+/* HERO INFO */
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: ;
+  background-color: wheat;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.hero-info h1 {
+  font-size: 30px;
+  font-weight: 1200;
+}
+
+.hero-info p {
+  font-size: 16px;
+  width: 80%;
+}
+
+.hero-info a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  color: wheat;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+/* info */
+
+#info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  font-size: 20px;
+  padding: 15px 20px;
+  background-color: wheat;
+  color: black;
+  border-radius: 20px;
+}
+
+#info span {
+  font-weight: 1000;
+  text-transform: uppercase;
+}
+
+/* ---------------------MEDIAQUARIS-------------------- */
+
+@media (max-width: 1000px) {
+  #hero{
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column
+  }
+
+.RM {
+  display: none;
+}
+.hero-info * {
+  max-width: 50%;
+}
+
+.hero-info a {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#info {
+  width: 500px;
+}
 }
